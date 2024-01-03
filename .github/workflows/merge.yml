@@ -19,6 +19,5 @@ jobs:
           git config user.email "actions@github.com"
           git remote update
           git checkout main2
-          git pull --allow-unrelated-histories origin main2
-          git merge main --no-ff --no-edit
+          git merge --allow-unrelated-histories main --no-edit
           git push origin main2
