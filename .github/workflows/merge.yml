@@ -1,0 +1,24 @@
+name: Merge
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  merge:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Merge to v4
+        run: |
+          git config user.name "GitHub Actions"
+          git config user.email "actions@github.com"
+          git remote update
+          git checkout main2
+          git pull
+          git merge main --no-ff --no-edit
+          git push origin main2
