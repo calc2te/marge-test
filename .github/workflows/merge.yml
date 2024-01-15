@@ -20,5 +20,5 @@ jobs:
           git config user.name "GitHub Actions"
           git config user.email "actions@github.com"
           git checkout main2
-          git merge --allow-unrelated-histories main --no-ff --no-edit
+          git merge main
           git push origin main2
