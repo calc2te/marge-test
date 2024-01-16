@@ -18,7 +18,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
         with:
-          repository: main2
+          ref: 'main2'
 
       - name: Print Message
         run: echo "Hello, GitHub Actions! 22"
