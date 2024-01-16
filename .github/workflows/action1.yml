@@ -1,3 +1,5 @@
+name: action1
+
 on:
   push:
     branches:
